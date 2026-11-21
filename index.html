@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CREASoft, le logiciel de calepinage des murs Crea'bloc</title>
+<meta name="description" content="CREASoft dessine votre mur en blocs Crea'bloc : plan coté, répartition des blocs rang par rang, vue 3D et dossier PDF avec la liste des blocs à commander. Windows et macOS.">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="sauter" href="#contenu">Aller au contenu</a>
+
+<header class="entete">
+  <div class="entete-int">
+    <a class="marque" href="#haut" aria-label="CREASoft, retour en haut">
+      <img src="img/logo-creasoft.png" alt="" width="40" height="40">
+      <span><b>CREA</b>Soft</span>
+    </a>
+    <button class="menu-bouton" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav id="menu" class="menu" aria-label="Navigation principale">
+      <a href="#plan">Le plan</a>
+      <a href="#calepinage">Le calepinage</a>
+      <a href="#trois-d">La 3D</a>
+      <a href="#dossier">Le dossier PDF</a>
+      <a href="#catalogue">Vos blocs</a>
+      <a href="#questions">Questions</a>
+      <a class="bouton bouton-petit" href="#contact">Demander une démonstration</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenu">
+
+<!-- ============ OUVERTURE ============ -->
+<section class="ouverture" id="haut">
+  <div class="ouverture-texte">
+    <p class="surtitre">Logiciel de calepinage par Crea'bloc</p>
+    <h1>Vous tracez le mur.<br>CREASoft pose chaque bloc, rang par rang.</h1>
+    <p class="chapo">Dessinez l'implantation de votre mur en blocs Crea'bloc. Le logiciel répartit les blocs sur chaque rang en décalant les joints, vous montre le mur en 3D et imprime le dossier de chantier avec la liste exacte des blocs à commander.</p>
+    <div class="actions">
+      <a class="bouton" href="#contact">Demander une démonstration</a>
+      <a class="lien-fort" href="#etapes">Voir les quatre étapes</a>
+    </div>
+    <p class="systemes">Pour Windows et macOS (Mac Apple Silicon, macOS 13 ou plus récent).</p>
+  </div>
+  <figure class="ouverture-image">
+    <img src="img/vue-realisme.webp" width="1800" height="914"
+         alt="Rendu réaliste d'un mur en L en blocs béton Crea'bloc, trois rangs, terminé par un escalier, avec les ergots visibles sur le dessus.">
+    <figcaption>Rendu « Réalisme » d'un mur de 7,20 m sur trois rangs, avec un bloc escalier en bout. Image produite par CREASoft.</figcaption>
+  </figure>
+</section>
+
+<!-- ============ ÉTAPES ============ -->
+<section class="etapes" id="etapes" aria-labelledby="etapes-titre">
+  <h2 id="etapes-titre" class="visuellement-cache">Les quatre étapes</h2>
+  <ol class="chaine">
+    <li>
+      <span class="chaine-cote">1</span>
+      <h3>Tracer</h3>
+      <p>Vous dessinez l'axe des murs sur une grille, ou par-dessus un plan scanné mis à l'échelle.</p>
+    </li>
+    <li>
+      <span class="chaine-cote">2</span>
+      <h3>Générer</h3>
+      <p>Un clic, et chaque mur se remplit avec les blocs que vous avez autorisés.</p>
+    </li>
+    <li>
+      <span class="chaine-cote">3</span>
+      <h3>Vérifier en 3D</h3>
+      <p>Vous tournez autour du mur, vous ajoutez des cotes, vous prenez des photos.</p>
+    </li>
+    <li>
+      <span class="chaine-cote">4</span>
+      <h3>Imprimer</h3>
+      <p>Le dossier PDF part au client ou sur le chantier : liste des blocs et plan de pose de chaque rang.</p>
+    </li>
+  </ol>
+</section>
+
+<!-- ============ PLAN ============ -->
+<section class="bloc-section" id="plan" aria-labelledby="plan-titre">
+  <div class="section-tete">
+    <h2 id="plan-titre">Un plan qui garde ses cotes quand vous le modifiez</h2>
+    <p>Posez des règles sur le dessin : ce mur reste vertical, ces deux-là restent parallèles, celui-ci fait 10 m. Ensuite, quand vous tirez un angle ou allongez une façade, le reste du plan suit tout seul et les règles restent respectées.</p>
+  </div>
+
+  <div class="plan-grille">
+    <figure class="cadre cadre-papier">
+      <img src="img/plan-contraintes.webp" width="1180" height="840" loading="lazy"
+           alt="Plan d'une maison dans CREASoft : murs en traits noirs sur grille, pastilles rouges des règles (parallèle, perpendiculaire, angle de 56,3 degrés), longueurs de 10,00 m, 5,00 m, 3,00 m, 4,47 m et 3,16 m.">
+      <figcaption>Plan d’essai. Chaque pastille rouge est une règle posée sur le dessin.</figcaption>
+    </figure>
+
+    <div class="contraintes">
+      <h3>Les huit règles du plan</h3>
+      <ul class="liste-contraintes">
+        <li><img src="img/icones/horizontal.png" alt="" width="36" height="36"><div><b>Horizontal</b><span>met une ligne à l'horizontale, ou aligne des points.</span></div></li>
+        <li><img src="img/icones/vertical.png" alt="" width="36" height="36"><div><b>Vertical</b><span>même chose, à la verticale.</span></div></li>
+        <li><img src="img/icones/fixer.png" alt="" width="36" height="36"><div><b>Fixer</b><span>bloque un point, une ligne ou un mur à sa place.</span></div></li>
+        <li><img src="img/icones/coincidence.png" alt="" width="36" height="36"><div><b>Coïncidence</b><span>réunit deux points, ou fait coulisser un point le long d'un mur.</span></div></li>
+        <li><img src="img/icones/parallele.png" alt="" width="36" height="36"><div><b>Parallèle</b><span>garde deux murs parallèles.</span></div></li>
+        <li><img src="img/icones/perpendiculaire.png" alt="" width="36" height="36"><div><b>Perpendiculaire</b><span>garde deux murs d'équerre.</span></div></li>
+        <li><img src="img/icones/longueur.png" alt="" width="36" height="36"><div><b>Longueur</b><span>impose une longueur ou une distance, en mètres.</span></div></li>
+        <li><img src="img/icones/angle.png" alt="" width="36" height="36"><div><b>Angle</b><span>impose l'angle entre deux murs, en degrés.</span></div></li>
+      </ul>
+      <p class="note">Si un déplacement casserait une règle, CREASoft affiche « Position impossible » et ne touche pas au plan.</p>
+    </div>
+  </div>
+
+  <div class="atouts">
+    <div>
+      <h3>L'aimant</h3>
+      <p>Les points s'accrochent à la grille, aux bouts des murs et aux croisements. Les angles ferment proprement.</p>
+    </div>
+    <div>
+      <h3>Le plan de fond</h3>
+      <p>Importez le plan de l'architecte ou une vue aérienne, calez l'échelle avec deux clics sur une cote connue, puis tracez par-dessus.</p>
+    </div>
+    <div>
+      <h3>Le mur réglé ligne par ligne</h3>
+      <p>Hauteur en nombre de blocs, dessus plat, mur en escalier, blocs autorisés sur cette ligne : tout se règle dans le panneau de droite.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CALEPINAGE ============ -->
+<section class="bloc-section section-beton" id="calepinage" aria-labelledby="calepinage-titre">
+  <div class="section-tete">
+    <h2 id="calepinage-titre">Le calepinage fait pour vous, assise par assise</h2>
+    <p>Le calepinage, c'est le choix et la place de chaque bloc. CREASoft le calcule rang par rang. Il prend les blocs que vous avez cochés pour ce projet, décale les joints d'un rang à l'autre pour que le mur se tienne, et laisse les vides nécessaires aux angles et aux jonctions en T.</p>
+  </div>
+
+  <div class="elevation" data-elevation>
+    <div class="elevation-barre" role="group" aria-label="Choisir le rang à afficher">
+      <button type="button" class="puce" aria-pressed="true" data-rang="tous">Tout le mur</button>
+      <button type="button" class="puce" aria-pressed="false" data-rang="1">Rang 1</button>
+      <button type="button" class="puce" aria-pressed="false" data-rang="2">Rang 2</button>
+      <button type="button" class="puce" aria-pressed="false" data-rang="3">Rang 3</button>
+    </div>
+    <div class="elevation-dessin">
+      <svg viewBox="0 44 800 236" role="img" aria-labelledby="elev-titre elev-desc" data-svg>
+        <title id="elev-titre">Élévation d'un mur droit de 7,20 m sur trois rangs</title>
+        <desc id="elev-desc">Rangs 1 et 3 : quatre blocs de 180 cm. Rang 2 : un demi-bloc de 90 cm à chaque bout et trois blocs de 180 cm, pour décaler les joints.</desc>
+      </svg>
+    </div>
+    <div class="elevation-legende" aria-live="polite" data-legende></div>
+    <p class="note">Exemple simplifié pour illustrer le principe. Dans le logiciel, la répartition suit votre plan, vos angles et votre catalogue de blocs.</p>
+  </div>
+
+  <div class="rangs">
+    <figure>
+      <img src="img/pdf-rang1.webp" width="914" height="1148" loading="lazy" alt="Page « Rang 1 » du dossier PDF : plan de pose vu de dessus, un mur en L, blocs colorés par type.">
+      <figcaption>Rang 1</figcaption>
+    </figure>
+    <figure>
+      <img src="img/pdf-rang2.webp" width="914" height="1148" loading="lazy" alt="Page « Rang 2 » du dossier PDF : les blocs sont décalés par rapport au rang 1.">
+      <figcaption>Rang 2</figcaption>
+    </figure>
+    <figure>
+      <img src="img/pdf-rang3.webp" width="914" height="1148" loading="lazy" alt="Page « Rang 3 » du dossier PDF : le rang du dessus, de nouveau décalé.">
+      <figcaption>Rang 3</figcaption>
+    </figure>
+  </div>
+  <p class="legende-rangs">Le même mur en L, rang par rang, tel qu'il sort dans le dossier PDF. Une couleur par type de bloc.</p>
+</section>
+
+<!-- ============ 3D ============ -->
+<section class="bloc-section" id="trois-d" aria-labelledby="troisd-titre">
+  <div class="section-tete">
+    <h2 id="troisd-titre">Le mur en volume, avant le premier bloc posé</h2>
+    <p>Tournez autour du mur à la souris, zoomez sur un angle, vérifiez une hauteur. Le décompte des blocs reste affiché dans un coin. Les cotes de longueur et de hauteur se placent où vous voulez, et chaque vue peut être enregistrée en photo, jusqu'en 4K.</p>
+  </div>
+
+  <div class="vues">
+    <figure class="vue vue-grande">
+      <img src="img/vue-croquis.webp" width="1600" height="773" loading="lazy" alt="Vue croquis en noir et blanc du mur en L, avec cotes rouges de 1,80 m de hauteur et 7,20 m de longueur.">
+      <figcaption><b>Croquis</b> : un dessin au trait, avec les cotes, facile à lire et à imprimer.</figcaption>
+    </figure>
+    <figure class="vue">
+      <img src="img/vue-couleur.webp" width="1000" height="470" loading="lazy" alt="Vue en couleur du même mur : chaque type de bloc a sa teinte.">
+      <figcaption><b>Couleur</b> : chaque type de bloc a sa teinte, comme dans le dossier PDF.</figcaption>
+    </figure>
+    <figure class="vue">
+      <img src="img/vue-realisme.webp" width="1800" height="914" loading="lazy" alt="Vue réaliste du même mur, texture béton et filigrane Crea'bloc.">
+      <figcaption><b>Réalisme</b> : perspective et texture béton, avec ou sans filigrane Crea'bloc.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ DOSSIER PDF ============ -->
+<section class="bloc-section section-papier" id="dossier" aria-labelledby="dossier-titre">
+  <div class="dossier">
+    <div class="dossier-texte">
+      <h2 id="dossier-titre">Un dossier de chantier prêt à imprimer</h2>
+      <p>À la fin, CREASoft produit un PDF au nom du projet. On l'envoie au client avec le devis, on le laisse au maçon sur le chantier.</p>
+      <dl class="sommaire-pdf">
+        <div><dt>Page de garde</dt><dd>Le nom du projet, la date, vos coordonnées et la photo 3D de votre choix.</dd></div>
+        <div><dt>Blocs nécessaires</dt><dd>Chaque type de bloc, ses dimensions en centimètres et la quantité, avec le total.</dd></div>
+        <div><dt>Un plan par rang</dt><dd>Le plan de pose vu de dessus, une couleur par type de bloc, et la légende.</dd></div>
+        <div><dt>Les grands chantiers</dt><dd>Au-delà d'une longueur que vous réglez, une vue d'ensemble découpée en cases, puis le détail de chaque case.</dd></div>
+      </dl>
+    </div>
+    <div class="feuilles">
+      <img class="feuille f1" src="img/pdf-quantitatif.webp" width="1075" height="1521" loading="lazy" alt="Page « Blocs nécessaires » du dossier : tableau avec 180-60 (12), 120-60 (6), escalier-180-60 (3), 90-60 (1), total 22.">
+      <img class="feuille f2" src="img/pdf-vue-ensemble.webp" width="1075" height="1521" loading="lazy" alt="Page « Vue d'ensemble » d'un long mur, quadrillée en 3 sur 2 cases.">
+      <img class="feuille f3" src="img/pdf-case.webp" width="1075" height="1521" loading="lazy" alt="Page « Couche 1, case A1 » : le détail d'une case du long mur.">
+    </div>
+  </div>
+</section>
+
+<!-- ============ CATALOGUE ============ -->
+<section class="bloc-section" id="catalogue" aria-labelledby="catalogue-titre">
+  <div class="section-tete">
+    <h2 id="catalogue-titre">Vos blocs, vos dimensions</h2>
+    <p>CREASoft travaille avec votre inventaire : les blocs classés par épaisseur de mur, avec leurs cotes et leurs ergots. Ajoutez un format, modifiez-en un, exportez le catalogue pour le donner à un collègue.</p>
+  </div>
+
+  <div class="catalogue">
+    <figure class="cadre cadre-schema">
+      <img src="img/schema-bloc.webp" width="700" height="640" loading="lazy" alt="Schéma d'un bloc à ergots avec ses cotes : longueur X, section Y, hauteur Z, largeurs d'ergot L1 et L2.">
+      <figcaption>Un bloc se décrit par trois cotes en centimètres et ses ergots.</figcaption>
+    </figure>
+
+    <div class="speciaux">
+      <h3>Les blocs spéciaux</h3>
+      <p>Pour les fins de mur et les passages, quatre formes se dessinent dans l'éditeur, qui en montre l'aperçu à mesure que vous tapez les cotes.</p>
+      <ul class="formes">
+        <li>
+          <svg viewBox="0 0 120 50" aria-hidden="true"><path d="M4 6h82a20 20 0 0 1 0 40H4z"/><circle cx="88" cy="26" r="9" class="ergot"/></svg>
+          <b>Arrondi</b><span>Bout en demi-cercle, ergot rond réglable.</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 120 50" aria-hidden="true"><path d="M4 6h112v40H82V22H62v24H4z"/></svg>
+          <b>Fourche</b><span>Une ou deux réservations pour les fourches, largeur et écartement réglables.</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 120 50" aria-hidden="true"><path d="M4 46V36h14V26h14V16h14V6h70v40z"/></svg>
+          <b>Escalier</b><span>Giron et contremarche au choix.</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 120 50" aria-hidden="true"><path d="M30 6h86v40H4z"/></svg>
+          <b>Oblique</b><span>Coupe en biais, longueur de diagonale réglable.</span>
+        </li>
+      </ul>
+      <h3>Les matrices</h3>
+      <p>Une matrice habille la face du mur avec une photo, par exemple un parement façon moellon. Le mur s'affiche alors en 3D avec ce motif plutôt qu'avec ses joints.</p>
+    </div>
+  </div>
+
+  <figure class="cadre ecran">
+    <img src="img/ecran-inventaire.webp" width="1383" height="839" loading="lazy" alt="Écran Inventaire de CREASoft : blocs groupés par section (50 cm, 60 cm), avec 180-60, escalier-180-60, arrondi-180-60, fourche-180-60, oblique-180-60, 120-60, 90-60.">
+    <figcaption>L'inventaire, classé par épaisseur de mur.</figcaption>
+  </figure>
+</section>
+
+<!-- ============ FICHE TECHNIQUE ============ -->
+<section class="bloc-section section-beton" id="fiche" aria-labelledby="fiche-titre">
+  <h2 id="fiche-titre">Fiche technique</h2>
+  <table class="fiche">
+    <tbody>
+      <tr><th scope="row">Ordinateurs</th><td>Windows 10 et 11. macOS 13 ou plus récent, sur Mac Apple Silicon (M1 et suivants).</td></tr>
+      <tr><th scope="row">Unités</th><td>Plan en mètres, blocs en centimètres, angles en degrés.</td></tr>
+      <tr><th scope="row">Règles du plan</th><td>Horizontal, vertical, fixer, coïncidence, parallèle, perpendiculaire, longueur, angle.</td></tr>
+      <tr><th scope="row">Blocs spéciaux</th><td>Arrondi, fourche, escalier, oblique.</td></tr>
+      <tr><th scope="row">Vues 3D</th><td>Croquis, couleur, réalisme. Cotes de longueur et de hauteur déplaçables.</td></tr>
+      <tr><th scope="row">Photos</th><td>SD, HD, Full HD, 2K ou 4K, rangées dans une galerie par projet.</td></tr>
+      <tr><th scope="row">Dossier</th><td>PDF : page de garde, blocs nécessaires, un plan de pose par rang, vue d'ensemble découpée pour les longs murs.</td></tr>
+      <tr><th scope="row">Fichiers</th><td>Un fichier <i>.projet</i> par chantier, qui s'ouvre d'un double-clic. Inventaire exportable en fichier <i>.inv</i>.</td></tr>
+      <tr><th scope="row">Confort</th><td>Annuler et rétablir partout (Ctrl+Z, Ctrl+Y). Guide illustré intégré au logiciel, en treize parties.</td></tr>
+      <tr><th scope="row">Version</th><td>1.10.22</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ============ QUESTIONS ============ -->
+<section class="bloc-section" id="questions" aria-labelledby="questions-titre">
+  <h2 id="questions-titre">Questions fréquentes</h2>
+  <div class="faq">
+    <details>
+      <summary>Faut-il savoir se servir d'un logiciel de dessin ?</summary>
+      <p>Non. On trace un mur avec deux clics, l'aimant ferme les angles, et un guide illustré est intégré au logiciel, de l'ouverture d'un projet jusqu'à l'impression du dossier.</p>
+    </details>
+    <details>
+      <summary>Est-ce que ça marche sur Mac ?</summary>
+      <p>Oui, sur les Mac Apple Silicon (M1 et suivants) avec macOS 13 ou plus récent.</p>
+    </details>
+    <details>
+      <summary>Puis-je ajouter mes propres formats de blocs ?</summary>
+      <p>Oui. L'inventaire se modifie : vous entrez les trois cotes en centimètres et les ergots, ou vous créez un bloc spécial (arrondi, fourche, escalier, oblique). Les nouveaux blocs apparaissent ensuite dans les réglages de vos projets.</p>
+    </details>
+    <details>
+      <summary>Comment le logiciel choisit-il les blocs ?</summary>
+      <p>Pour chaque projet, vous choisissez l'épaisseur du mur et vous cochez les blocs autorisés. Vous pouvez même restreindre les blocs mur par mur. CREASoft ne pose que ceux-là, en décalant les joints d'un rang à l'autre.</p>
+    </details>
+    <details>
+      <summary>Puis-je partir d'un plan existant ?</summary>
+      <p>Oui. Importez une image du plan, indiquez une longueur connue pour mettre l'image à l'échelle, puis tracez les murs par-dessus.</p>
+    </details>
+    <details>
+      <summary>Que contient le dossier PDF ?</summary>
+      <p>Une page de garde avec la photo 3D choisie, la liste des blocs nécessaires avec leurs quantités, puis un plan de pose par rang. Pour un long mur, une vue d'ensemble découpée en cases et le détail de chaque case.</p>
+    </details>
+    <details>
+      <summary>Où sont enregistrés mes projets ?</summary>
+      <p>Sur votre ordinateur : chaque chantier est un fichier <i>.projet</i> qui contient le plan, les réglages et les photos. Les dossiers PDF et les photos vont dans un dossier <i>docs_CREASoft</i>, au nom de chaque projet.</p>
+    </details>
+  </div>
+</section>
+
+<!-- ============ QUI SUIS-JE ============ -->
+<section class="bloc-section" id="auteur" aria-labelledby="auteur-titre">
+  <div class="auteur">
+    <h2 id="auteur-titre">Qui suis-je ?</h2>
+    <div>
+      <p>Je m'appelle Yann Royer. C'est moi qui conçois et développe CREASoft, de la première ligne du plan jusqu'au dossier PDF. Si vous avez une question, une idée ou un problème avec le logiciel, c'est donc à moi que vous parlez directement.</p>
+      <p><a class="lien-fort" href="https://yann.royer.contact" rel="author">Voir mon portfolio</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TARIF ET CONTACT ============ -->
+<section class="bloc-section section-rouge" id="contact" aria-labelledby="contact-titre">
+  <div class="contact">
+    <div>
+      <h2 id="contact-titre">Voir CREASoft en marche</h2>
+      <p>Écrivez-moi ou appelez-moi pour une démonstration, ou pour être prévenu de l'ouverture des abonnements.</p>
+    </div>
+    <div class="contact-carte">
+      <h3>Tarif</h3>
+      <p>CREASoft sera proposé <b>par abonnement</b>.</p>
+      <p class="bientot">Le tarif sera bientôt annoncé.</p>
+      <h3>Me joindre</h3>
+      <ul class="coordonnees">
+        <li><span>Téléphone</span> <a href="tel:+33769184422">+33 7 69 18 44 22</a></li>
+        <li><span>E-mail</span> <a href="mailto:royer.yann@free.fr">royer.yann@free.fr</a></li>
+      </ul>
+      <a class="bouton bouton-clair" href="mailto:royer.yann@free.fr?subject=D%C3%A9monstration%20CREASoft">Écrire pour une démonstration</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="pied">
+  <div class="pied-int">
+    <p>© 2026 Yann Royer. <b>CREA</b>Soft, logiciel de calepinage par Crea'bloc.</p>
+    <p><a href="#haut">Retour en haut</a> · <a href="mentions-legales.html">Mentions légales</a></p>
+  </div>
+</footer>
+
+<script src="site.js" defer></script>
+</body>
+</html>
