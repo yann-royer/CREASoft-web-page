@@ -134,7 +134,7 @@ a:hover { color: var(--brique-survol); }
   min-height: 44px; padding: 8px 16px; cursor: pointer;
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1240px) {
   .menu-bouton { display: inline-flex; align-items: center; }
   .menu {
     display: none;
@@ -480,3 +480,28 @@ a:hover { color: var(--brique-survol); }
 .legal ul { padding-left: 1.2em; }
 .legal a { overflow-wrap: anywhere; }
 .retour { display: inline-block; margin-bottom: 24px; font-weight: 600; }
+
+/* ---------- Choix de la langue ---------- */
+.marque { margin-right: auto; }
+.langues { display: flex; align-items: center; gap: 2px; margin-left: 8px; }
+.langues a {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 36px; min-height: 36px; padding: 4px 6px; border-radius: 6px;
+  font-size: .88rem; font-weight: 650; color: var(--encre-douce); text-decoration: none;
+}
+.langues a:hover { color: var(--brique-texte); background: var(--surface); }
+.langues a[aria-current="page"] { color: var(--brique-texte); box-shadow: inset 0 -2px 0 var(--brique); border-radius: 6px 6px 0 0; }
+@media (max-width: 1240px) { .langues { margin-left: 0; margin-right: 4px; } }
+@media (max-width: 360px) { .langues a { min-width: 30px; padding: 4px 3px; } }
+.menu-bouton { order: 3; }
+/* Petits téléphones : le logo (qui porte déjà « CREA SOFT ») suffit, pour laisser la place aux langues et au menu */
+@media (max-width: 440px) {
+  .entete-int { gap: 10px; }
+  .marque span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .marque img { width: 44px; height: 44px; }
+}
+.bouton-petit { white-space: nowrap; }
+@media (min-width: 1241px) {
+  .menu a:not(.bouton) { padding: 8px 7px; font-size: .95rem; }
+  .menu .bouton { margin-left: 6px; }
+}

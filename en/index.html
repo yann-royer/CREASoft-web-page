@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CREASoft, block layout software for Crea'bloc walls</title>
+<meta name="description" content="CREASoft draws your Crea'bloc block wall: a dimensioned plan, the blocks laid out course by course, a 3D view and a PDF file with the list of blocks to order. Windows and macOS.">
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
+<link rel="alternate" hreflang="fr" href="https://yann-royer.github.io/CREASoft-web-page/">
+<link rel="alternate" hreflang="en" href="https://yann-royer.github.io/CREASoft-web-page/en/">
+<link rel="alternate" hreflang="de" href="https://yann-royer.github.io/CREASoft-web-page/de/">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<a class="sauter" href="#contenu">Skip to content</a>
+
+<header class="entete">
+  <div class="entete-int">
+    <a class="marque" href="#haut" aria-label="CREASoft, back to top">
+      <img src="../img/logo-creasoft.png" alt="" width="40" height="40">
+      <span><b>CREA</b>Soft</span>
+    </a>
+    <button class="menu-bouton" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav id="menu" class="menu" aria-label="Main navigation">
+      <a href="#plan">The plan</a>
+      <a href="#calepinage">Block layout</a>
+      <a href="#trois-d">3D</a>
+      <a href="#dossier">The PDF file</a>
+      <a href="#catalogue">Your blocks</a>
+      <a href="#questions">Questions</a>
+      <a class="bouton bouton-petit" href="#contact">Ask for a demo</a>
+    </nav>
+    <nav class="langues" aria-label="Site language">
+      <a href="../index.html" lang="fr" hreflang="fr" title="Français">FR</a>
+      <a href="index.html" lang="en" hreflang="en" aria-current="page" title="English">EN</a>
+      <a href="../de/index.html" lang="de" hreflang="de" title="Deutsch">DE</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenu">
+
+<!-- ============ OPENING ============ -->
+<section class="ouverture" id="haut">
+  <div class="ouverture-texte">
+    <p class="surtitre">Block layout software by Crea'bloc</p>
+    <h1>You draw the wall.<br>CREASoft places every block, course by course.</h1>
+    <p class="chapo">Draw the layout of your Crea'bloc block wall. The software spreads the blocks over each course with staggered joints, shows you the wall in 3D and prints the site file with the exact list of blocks to order.</p>
+    <div class="actions">
+      <a class="bouton" href="#contact">Ask for a demo</a>
+      <a class="lien-fort" href="#etapes">See the four steps</a>
+    </div>
+    <p class="systemes">For Windows and macOS (Apple Silicon Mac, macOS 13 or later). The software itself is in French.</p>
+  </div>
+  <figure class="ouverture-image">
+    <img src="../img/vue-realisme.webp" width="1800" height="914"
+         alt="Realistic render of an L-shaped wall made of Crea'bloc concrete blocks, three courses high, ending in a stair block, with the studs visible on top.">
+    <figcaption>“Realism” render of a 7.20 m wall on three courses, with a stair block at the end. Image made with CREASoft.</figcaption>
+  </figure>
+</section>
+
+<!-- ============ STEPS ============ -->
+<section class="etapes" id="etapes" aria-labelledby="etapes-titre">
+  <h2 id="etapes-titre" class="visuellement-cache">The four steps</h2>
+  <ol class="chaine">
+    <li>
+      <span class="chaine-cote">1</span>
+      <h3>Draw</h3>
+      <p>You draw the centre line of the walls on a grid, or over a scanned plan brought to scale.</p>
+    </li>
+    <li>
+      <span class="chaine-cote">2</span>
+      <h3>Generate</h3>
+      <p>One click, and every wall fills up with the blocks you have allowed.</p>
+    </li>
+    <li>
+      <span class="chaine-cote">3</span>
+      <h3>Check in 3D</h3>
+      <p>You walk around the wall, add dimensions and take pictures.</p>
+    </li>
+    <li>
+      <span class="chaine-cote">4</span>
+      <h3>Print</h3>
+      <p>The PDF file goes to the customer or to the site: list of blocks and a laying plan for each course.</p>
+    </li>
+  </ol>
+</section>
+
+<!-- ============ PLAN ============ -->
+<section class="bloc-section" id="plan" aria-labelledby="plan-titre">
+  <div class="section-tete">
+    <h2 id="plan-titre">A plan that keeps its dimensions while you edit it</h2>
+    <p>Put rules on the drawing: this wall stays vertical, these two stay parallel, that one is 10 m long. Then, when you drag a corner or stretch a façade, the rest of the plan follows on its own and every rule still holds.</p>
+  </div>
+
+  <div class="plan-grille">
+    <figure class="cadre cadre-papier">
+      <img src="../img/plan-contraintes.webp" width="1180" height="840" loading="lazy"
+           alt="Plan of a house in CREASoft: walls as black lines on a grid, red rule badges (parallel, perpendicular, a 56.3 degree angle), lengths of 10.00 m, 5.00 m, 3.00 m, 4.47 m and 3.16 m.">
+      <figcaption>Test plan. Each red badge is a rule set on the drawing.</figcaption>
+    </figure>
+
+    <div class="contraintes">
+      <h3>The eight plan rules</h3>
+      <ul class="liste-contraintes">
+        <li><img src="../img/icones/horizontal.png" alt="" width="36" height="36"><div><b>Horizontal</b><span>makes a line horizontal, or lines up points.</span></div></li>
+        <li><img src="../img/icones/vertical.png" alt="" width="36" height="36"><div><b>Vertical</b><span>the same, vertically.</span></div></li>
+        <li><img src="../img/icones/fixer.png" alt="" width="36" height="36"><div><b>Fix</b><span>locks a point, a line or a wall in place.</span></div></li>
+        <li><img src="../img/icones/coincidence.png" alt="" width="36" height="36"><div><b>Coincident</b><span>joins two points, or lets a point slide along a wall.</span></div></li>
+        <li><img src="../img/icones/parallele.png" alt="" width="36" height="36"><div><b>Parallel</b><span>keeps two walls parallel.</span></div></li>
+        <li><img src="../img/icones/perpendiculaire.png" alt="" width="36" height="36"><div><b>Perpendicular</b><span>keeps two walls square.</span></div></li>
+        <li><img src="../img/icones/longueur.png" alt="" width="36" height="36"><div><b>Length</b><span>sets a length or a distance, in metres.</span></div></li>
+        <li><img src="../img/icones/angle.png" alt="" width="36" height="36"><div><b>Angle</b><span>sets the angle between two walls, in degrees.</span></div></li>
+      </ul>
+      <p class="note">If a move would break a rule, CREASoft says the position is impossible and leaves the plan as it was.</p>
+    </div>
+  </div>
+
+  <div class="atouts">
+    <div>
+      <h3>The magnet</h3>
+      <p>Points snap to the grid, to wall ends and to crossings. Corners close cleanly.</p>
+    </div>
+    <div>
+      <h3>The background plan</h3>
+      <p>Import the architect's plan or an aerial view, set the scale with two clicks on a known dimension, then draw on top.</p>
+    </div>
+    <div>
+      <h3>Each wall set line by line</h3>
+      <p>Height in number of blocks, flat top, stepped wall, blocks allowed on this line: everything is set in the right-hand panel.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BLOCK LAYOUT ============ -->
+<section class="bloc-section section-beton" id="calepinage" aria-labelledby="calepinage-titre">
+  <div class="section-tete">
+    <h2 id="calepinage-titre">The block layout done for you, course by course</h2>
+    <p>The layout is the choice and position of every block. CREASoft works it out course by course. It uses the blocks you ticked for the project, staggers the joints from one course to the next so the wall holds together, and leaves the gaps needed at corners and T-junctions.</p>
+  </div>
+
+  <div class="elevation" data-elevation
+       data-txt-rang="Course" data-txt-total-mur="Whole wall" data-txt-total-rang="Course"
+       data-txt-blocs="blocks" data-txt-longueur="7.20 m" data-txt-hauteur="1.80 m">
+    <div class="elevation-barre" role="group" aria-label="Choose the course to show">
+      <button type="button" class="puce" aria-pressed="true" data-rang="tous">Whole wall</button>
+      <button type="button" class="puce" aria-pressed="false" data-rang="1">Course 1</button>
+      <button type="button" class="puce" aria-pressed="false" data-rang="2">Course 2</button>
+      <button type="button" class="puce" aria-pressed="false" data-rang="3">Course 3</button>
+    </div>
+    <div class="elevation-dessin">
+      <svg viewBox="0 44 800 236" role="img" aria-labelledby="elev-titre elev-desc" data-svg>
+        <title id="elev-titre">Elevation of a straight 7.20 m wall on three courses</title>
+        <desc id="elev-desc">Courses 1 and 3: four 180 cm blocks. Course 2: a 90 cm half block at each end and three 180 cm blocks, to stagger the joints.</desc>
+      </svg>
+    </div>
+    <div class="elevation-legende" aria-live="polite" data-legende></div>
+    <p class="note">Simplified example to show the idea. In the software, the layout follows your plan, your corners and your block catalogue.</p>
+  </div>
+
+  <div class="rangs">
+    <figure>
+      <img src="../img/pdf-rang1.webp" width="914" height="1148" loading="lazy" alt="“Course 1” page of the PDF file: laying plan seen from above, an L-shaped wall, blocks coloured by type.">
+      <figcaption>Course 1</figcaption>
+    </figure>
+    <figure>
+      <img src="../img/pdf-rang2.webp" width="914" height="1148" loading="lazy" alt="“Course 2” page of the PDF file: the blocks are offset from course 1.">
+      <figcaption>Course 2</figcaption>
+    </figure>
+    <figure>
+      <img src="../img/pdf-rang3.webp" width="914" height="1148" loading="lazy" alt="“Course 3” page of the PDF file: the top course, offset again.">
+      <figcaption>Course 3</figcaption>
+    </figure>
+  </div>
+  <p class="legende-rangs">The same L-shaped wall, course by course, as it comes out in the PDF file (in French). One colour per block type.</p>
+</section>
+
+<!-- ============ 3D ============ -->
+<section class="bloc-section" id="trois-d" aria-labelledby="troisd-titre">
+  <div class="section-tete">
+    <h2 id="troisd-titre">The wall in 3D, before the first block is laid</h2>
+    <p>Turn around the wall with the mouse, zoom in on a corner, check a height. The block count stays on screen in a corner. Length and height dimensions go wherever you want, and every view can be saved as a picture, up to 4K.</p>
+  </div>
+
+  <div class="vues">
+    <figure class="vue vue-grande">
+      <img src="../img/vue-croquis.webp" width="1600" height="773" loading="lazy" alt="Black and white sketch view of the L-shaped wall, with red dimensions of 1.80 m in height and 7.20 m in length.">
+      <figcaption><b>Sketch</b>: a line drawing with dimensions, easy to read and to print.</figcaption>
+    </figure>
+    <figure class="vue">
+      <img src="../img/vue-couleur.webp" width="1000" height="470" loading="lazy" alt="Colour view of the same wall: each block type has its own colour.">
+      <figcaption><b>Colour</b>: each block type has its own colour, as in the PDF file.</figcaption>
+    </figure>
+    <figure class="vue">
+      <img src="../img/vue-realisme.webp" width="1800" height="914" loading="lazy" alt="Realistic view of the same wall, concrete texture and Crea'bloc watermark.">
+      <figcaption><b>Realism</b>: perspective and concrete texture, with or without the Crea'bloc watermark.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ PDF FILE ============ -->
+<section class="bloc-section section-papier" id="dossier" aria-labelledby="dossier-titre">
+  <div class="dossier">
+    <div class="dossier-texte">
+      <h2 id="dossier-titre">A site file ready to print</h2>
+      <p>At the end, CREASoft produces a PDF named after the project. Send it to the customer with the quote, leave it with the builder on site.</p>
+      <dl class="sommaire-pdf">
+        <div><dt>Cover page</dt><dd>Project name, date, your contact details and the 3D picture of your choice.</dd></div>
+        <div><dt>Blocks needed</dt><dd>Each block type, its size in centimetres and the quantity, with the total.</dd></div>
+        <div><dt>One plan per course</dt><dd>The laying plan seen from above, one colour per block type, and the legend.</dd></div>
+        <div><dt>Large projects</dt><dd>Beyond a length you choose, an overview split into squares, then the detail of each square.</dd></div>
+      </dl>
+    </div>
+    <div class="feuilles">
+      <img class="feuille f1" src="../img/pdf-quantitatif.webp" width="1075" height="1521" loading="lazy" alt="“Blocks needed” page of the file: table with 180-60 (12), 120-60 (6), stair-180-60 (3), 90-60 (1), total 22.">
+      <img class="feuille f2" src="../img/pdf-vue-ensemble.webp" width="1075" height="1521" loading="lazy" alt="“Overview” page of a long wall, split into 3 by 2 squares.">
+      <img class="feuille f3" src="../img/pdf-case.webp" width="1075" height="1521" loading="lazy" alt="“Layer 1, square A1” page: the detail of one square of the long wall.">
+    </div>
+  </div>
+</section>
+
+<!-- ============ CATALOGUE ============ -->
+<section class="bloc-section" id="catalogue" aria-labelledby="catalogue-titre">
+  <div class="section-tete">
+    <h2 id="catalogue-titre">Your blocks, your sizes</h2>
+    <p>CREASoft works from your inventory: blocks sorted by wall thickness, with their sizes and their studs. Add a size, change one, export the catalogue to hand it to a colleague.</p>
+  </div>
+
+  <div class="catalogue">
+    <figure class="cadre cadre-schema">
+      <img src="../img/schema-bloc.webp" width="700" height="640" loading="lazy" alt="Drawing of a studded block with its dimensions: length X, width Y, height Z, stud widths L1 and L2.">
+      <figcaption>A block is described by three sizes in centimetres and its studs.</figcaption>
+    </figure>
+
+    <div class="speciaux">
+      <h3>Special blocks</h3>
+      <p>For wall ends and openings, four shapes are drawn in the editor, which shows a preview as you type the sizes.</p>
+      <ul class="formes">
+        <li>
+          <svg viewBox="0 0 120 50" aria-hidden="true"><path d="M4 6h82a20 20 0 0 1 0 40H4z"/><circle cx="88" cy="26" r="9" class="ergot"/></svg>
+          <b>Rounded</b><span>Half-round end, adjustable round stud.</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 120 50" aria-hidden="true"><path d="M4 6h112v40H82V22H62v24H4z"/></svg>
+          <b>Fork pocket</b><span>One or two pockets for the forks, adjustable width and spacing.</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 120 50" aria-hidden="true"><path d="M4 46V36h14V26h14V16h14V6h70v40z"/></svg>
+          <b>Stair</b><span>Tread and riser of your choice.</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 120 50" aria-hidden="true"><path d="M30 6h86v40H4z"/></svg>
+          <b>Angled</b><span>Bevelled cut, adjustable diagonal length.</span>
+        </li>
+      </ul>
+      <h3>Surface patterns</h3>
+      <p>A pattern covers the face of the wall with a photo, for example a rubble stone finish. The wall then shows in 3D with that pattern instead of its joints.</p>
+    </div>
+  </div>
+
+  <figure class="cadre ecran">
+    <img src="../img/ecran-inventaire.webp" width="1383" height="839" loading="lazy" alt="CREASoft inventory screen (in French): blocks grouped by wall thickness (50 cm, 60 cm), with 180-60, stair, rounded, fork and angled blocks, 120-60, 90-60.">
+    <figcaption>The inventory, sorted by wall thickness.</figcaption>
+  </figure>
+</section>
+
+<!-- ============ SPECIFICATIONS ============ -->
+<section class="bloc-section section-beton" id="fiche" aria-labelledby="fiche-titre">
+  <h2 id="fiche-titre">Specifications</h2>
+  <table class="fiche">
+    <tbody>
+      <tr><th scope="row">Computers</th><td>Windows 10 and 11. macOS 13 or later, on Apple Silicon Macs (M1 and later).</td></tr>
+      <tr><th scope="row">Units</th><td>Plan in metres, blocks in centimetres, angles in degrees.</td></tr>
+      <tr><th scope="row">Plan rules</th><td>Horizontal, vertical, fix, coincident, parallel, perpendicular, length, angle.</td></tr>
+      <tr><th scope="row">Special blocks</th><td>Rounded, fork pocket, stair, angled.</td></tr>
+      <tr><th scope="row">3D views</th><td>Sketch, colour, realism. Movable length and height dimensions.</td></tr>
+      <tr><th scope="row">Pictures</th><td>SD, HD, Full HD, 2K or 4K, kept in a gallery for each project.</td></tr>
+      <tr><th scope="row">Site file</th><td>PDF: cover page, blocks needed, one laying plan per course, overview split into squares for long walls.</td></tr>
+      <tr><th scope="row">Files</th><td>One <i>.projet</i> file per project, opened with a double click. Inventory export as an <i>.inv</i> file.</td></tr>
+      <tr><th scope="row">Comfort</th><td>Undo and redo everywhere (Ctrl+Z, Ctrl+Y). Illustrated guide built into the software, in thirteen parts.</td></tr>
+      <tr><th scope="row">Language</th><td>The software and its guide are in French.</td></tr>
+      <tr><th scope="row">Version</th><td>1.10.22</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ============ QUESTIONS ============ -->
+<section class="bloc-section" id="questions" aria-labelledby="questions-titre">
+  <h2 id="questions-titre">Frequently asked questions</h2>
+  <div class="faq">
+    <details>
+      <summary>Is the software available in English?</summary>
+      <p>Not yet: the screens, the guide and the PDF file are in French.</p>
+    </details>
+    <details>
+      <summary>Do I need to know how to use drawing software?</summary>
+      <p>No. You draw a wall with two clicks, the magnet closes the corners, and an illustrated guide is built into the software, from opening a project to printing the file.</p>
+    </details>
+    <details>
+      <summary>Does it work on a Mac?</summary>
+      <p>Yes, on Apple Silicon Macs (M1 and later) with macOS 13 or later.</p>
+    </details>
+    <details>
+      <summary>Can I add my own block sizes?</summary>
+      <p>Yes. The inventory can be edited: you enter the three sizes in centimetres and the studs, or you create a special block (rounded, fork pocket, stair, angled). New blocks then appear in your project settings.</p>
+    </details>
+    <details>
+      <summary>How does the software choose the blocks?</summary>
+      <p>For each project, you choose the wall thickness and tick the blocks allowed. You can even limit the blocks wall by wall. CREASoft only lays those, staggering the joints from one course to the next.</p>
+    </details>
+    <details>
+      <summary>Can I start from an existing plan?</summary>
+      <p>Yes. Import a picture of the plan, give a known length to bring it to scale, then draw the walls on top.</p>
+    </details>
+    <details>
+      <summary>What is in the PDF file?</summary>
+      <p>A cover page with the chosen 3D picture, the list of blocks needed with their quantities, then one laying plan per course. For a long wall, an overview split into squares and the detail of each square.</p>
+    </details>
+    <details>
+      <summary>Where are my projects saved?</summary>
+      <p>On your computer: each project is a <i>.projet</i> file holding the plan, the settings and the pictures. PDF files and pictures go into a <i>docs_CREASoft</i> folder, under each project's name.</p>
+    </details>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="bloc-section" id="auteur" aria-labelledby="auteur-titre">
+  <div class="auteur">
+    <h2 id="auteur-titre">Who am I?</h2>
+    <div>
+      <p>My name is Yann Royer. I design and develop CREASoft, from the first line of the plan to the PDF file. So if you have a question, an idea or a problem with the software, you talk to me directly.</p>
+      <p><a class="lien-fort" href="https://yann.royer.contact" rel="author">See my portfolio</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICING AND CONTACT ============ -->
+<section class="bloc-section section-rouge" id="contact" aria-labelledby="contact-titre">
+  <div class="contact">
+    <div>
+      <h2 id="contact-titre">See CREASoft at work</h2>
+      <p>Write to me or call me for a demo, or to hear when subscriptions open.</p>
+    </div>
+    <div class="contact-carte">
+      <h3>Pricing</h3>
+      <p>CREASoft will be offered <b>as a subscription</b>.</p>
+      <p class="bientot">Pricing coming soon.</p>
+      <h3>Contact me</h3>
+      <ul class="coordonnees">
+        <li><span>Phone</span> <a href="tel:+33769184422">+33 7 69 18 44 22</a></li>
+        <li><span>E-mail</span> <a href="mailto:royer.yann@free.fr">royer.yann@free.fr</a></li>
+      </ul>
+      <a class="bouton bouton-clair" href="mailto:royer.yann@free.fr?subject=CREASoft%20demo">Write to ask for a demo</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="pied">
+  <div class="pied-int">
+    <p>© 2026 Yann Royer. <b>CREA</b>Soft, block layout software by Crea'bloc.</p>
+    <p><a href="#haut">Back to top</a> · <a href="legal-notice.html">Legal notice</a></p>
+  </div>
+</footer>
+
+<script src="../site.js" defer></script>
+</body>
+</html>

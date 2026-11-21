@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CREASoft, die Software für Verlegepläne von Crea'bloc-Mauern</title>
+<meta name="description" content="CREASoft zeichnet Ihre Mauer aus Crea'bloc-Blöcken: bemaßter Plan, Verteilung der Blöcke Lage für Lage, 3D-Ansicht und PDF-Mappe mit der Liste der zu bestellenden Blöcke. Windows und macOS.">
+<link rel="icon" type="image/png" href="../img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
+<link rel="alternate" hreflang="fr" href="https://yann-royer.github.io/CREASoft-web-page/">
+<link rel="alternate" hreflang="en" href="https://yann-royer.github.io/CREASoft-web-page/en/">
+<link rel="alternate" hreflang="de" href="https://yann-royer.github.io/CREASoft-web-page/de/">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<a class="sauter" href="#contenu">Zum Inhalt springen</a>
+
+<header class="entete">
+  <div class="entete-int">
+    <a class="marque" href="#haut" aria-label="CREASoft, nach oben">
+      <img src="../img/logo-creasoft.png" alt="" width="40" height="40">
+      <span><b>CREA</b>Soft</span>
+    </a>
+    <button class="menu-bouton" type="button" aria-expanded="false" aria-controls="menu">Menü</button>
+    <nav id="menu" class="menu" aria-label="Hauptnavigation">
+      <a href="#plan">Der Plan</a>
+      <a href="#calepinage">Verlegeplan</a>
+      <a href="#trois-d">3D</a>
+      <a href="#dossier">Die PDF-Mappe</a>
+      <a href="#catalogue">Ihre Blöcke</a>
+      <a href="#questions">Fragen</a>
+      <a class="bouton bouton-petit" href="#contact">Vorführung anfragen</a>
+    </nav>
+    <nav class="langues" aria-label="Sprache der Website">
+      <a href="../index.html" lang="fr" hreflang="fr" title="Français">FR</a>
+      <a href="../en/index.html" lang="en" hreflang="en" title="English">EN</a>
+      <a href="index.html" lang="de" hreflang="de" aria-current="page" title="Deutsch">DE</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenu">
+
+<!-- ============ ERÖFFNUNG ============ -->
+<section class="ouverture" id="haut">
+  <div class="ouverture-texte">
+    <p class="surtitre">Software für Verlegepläne von Crea'bloc</p>
+    <h1>Sie zeichnen die Mauer.<br>CREASoft setzt jeden Block, Lage für Lage.</h1>
+    <p class="chapo">Zeichnen Sie den Grundriss Ihrer Mauer aus Crea'bloc-Blöcken. Die Software verteilt die Blöcke auf jede Lage mit versetzten Fugen, zeigt Ihnen die Mauer in 3D und druckt die Baustellenmappe mit der genauen Liste der zu bestellenden Blöcke.</p>
+    <div class="actions">
+      <a class="bouton" href="#contact">Vorführung anfragen</a>
+      <a class="lien-fort" href="#etapes">Die vier Schritte ansehen</a>
+    </div>
+    <p class="systemes">Für Windows und macOS (Mac mit Apple Silicon, macOS 13 oder neuer). Die Software selbst ist auf Französisch.</p>
+  </div>
+  <figure class="ouverture-image">
+    <img src="../img/vue-realisme.webp" width="1800" height="914"
+         alt="Realistische Darstellung einer L-förmigen Mauer aus Crea'bloc-Betonblöcken, drei Lagen hoch, mit einem Treppenblock am Ende und sichtbaren Noppen auf der Oberseite.">
+    <figcaption>Darstellung „Realismus“ einer 7,20 m langen Mauer mit drei Lagen und einem Treppenblock am Ende. Bild aus CREASoft.</figcaption>
+  </figure>
+</section>
+
+<!-- ============ SCHRITTE ============ -->
+<section class="etapes" id="etapes" aria-labelledby="etapes-titre">
+  <h2 id="etapes-titre" class="visuellement-cache">Die vier Schritte</h2>
+  <ol class="chaine">
+    <li>
+      <span class="chaine-cote">1</span>
+      <h3>Zeichnen</h3>
+      <p>Sie zeichnen die Achse der Mauern auf einem Raster oder über einem eingescannten, maßstäblichen Plan.</p>
+    </li>
+    <li>
+      <span class="chaine-cote">2</span>
+      <h3>Erzeugen</h3>
+      <p>Ein Klick, und jede Mauer füllt sich mit den Blöcken, die Sie zugelassen haben.</p>
+    </li>
+    <li>
+      <span class="chaine-cote">3</span>
+      <h3>In 3D prüfen</h3>
+      <p>Sie drehen sich um die Mauer, setzen Maße und machen Bilder.</p>
+    </li>
+    <li>
+      <span class="chaine-cote">4</span>
+      <h3>Drucken</h3>
+      <p>Die PDF-Mappe geht an den Kunden oder auf die Baustelle: Blockliste und Verlegeplan für jede Lage.</p>
+    </li>
+  </ol>
+</section>
+
+<!-- ============ PLAN ============ -->
+<section class="bloc-section" id="plan" aria-labelledby="plan-titre">
+  <div class="section-tete">
+    <h2 id="plan-titre">Ein Plan, der seine Maße behält, wenn Sie ihn ändern</h2>
+    <p>Legen Sie Regeln auf die Zeichnung: Diese Mauer bleibt senkrecht, diese beiden bleiben parallel, jene ist 10 m lang. Wenn Sie danach eine Ecke ziehen oder eine Fassade verlängern, folgt der Rest des Plans von selbst und alle Regeln bleiben erfüllt.</p>
+  </div>
+
+  <div class="plan-grille">
+    <figure class="cadre cadre-papier">
+      <img src="../img/plan-contraintes.webp" width="1180" height="840" loading="lazy"
+           alt="Grundriss eines Hauses in CREASoft: Mauern als schwarze Linien auf einem Raster, rote Regel-Plaketten (parallel, rechtwinklig, ein Winkel von 56,3 Grad), Längen von 10,00 m, 5,00 m, 3,00 m, 4,47 m und 3,16 m.">
+      <figcaption>Testplan. Jede rote Plakette ist eine Regel auf der Zeichnung.</figcaption>
+    </figure>
+
+    <div class="contraintes">
+      <h3>Die acht Regeln des Plans</h3>
+      <ul class="liste-contraintes">
+        <li><img src="../img/icones/horizontal.png" alt="" width="36" height="36"><div><b>Waagerecht</b><span>macht eine Linie waagerecht oder richtet Punkte aus.</span></div></li>
+        <li><img src="../img/icones/vertical.png" alt="" width="36" height="36"><div><b>Senkrecht</b><span>dasselbe, senkrecht.</span></div></li>
+        <li><img src="../img/icones/fixer.png" alt="" width="36" height="36"><div><b>Fixieren</b><span>hält einen Punkt, eine Linie oder eine Mauer an ihrem Platz.</span></div></li>
+        <li><img src="../img/icones/coincidence.png" alt="" width="36" height="36"><div><b>Deckungsgleich</b><span>vereint zwei Punkte oder lässt einen Punkt an einer Mauer entlanggleiten.</span></div></li>
+        <li><img src="../img/icones/parallele.png" alt="" width="36" height="36"><div><b>Parallel</b><span>hält zwei Mauern parallel.</span></div></li>
+        <li><img src="../img/icones/perpendiculaire.png" alt="" width="36" height="36"><div><b>Rechtwinklig</b><span>hält zwei Mauern im rechten Winkel.</span></div></li>
+        <li><img src="../img/icones/longueur.png" alt="" width="36" height="36"><div><b>Länge</b><span>legt eine Länge oder einen Abstand fest, in Metern.</span></div></li>
+        <li><img src="../img/icones/angle.png" alt="" width="36" height="36"><div><b>Winkel</b><span>legt den Winkel zwischen zwei Mauern fest, in Grad.</span></div></li>
+      </ul>
+      <p class="note">Würde eine Verschiebung eine Regel verletzen, meldet CREASoft, dass die Position unmöglich ist, und lässt den Plan unverändert.</p>
+    </div>
+  </div>
+
+  <div class="atouts">
+    <div>
+      <h3>Der Magnet</h3>
+      <p>Punkte rasten am Raster, an Mauerenden und an Kreuzungen ein. Ecken schließen sauber.</p>
+    </div>
+    <div>
+      <h3>Der Hintergrundplan</h3>
+      <p>Importieren Sie den Plan des Architekten oder ein Luftbild, stellen Sie den Maßstab mit zwei Klicks auf einem bekannten Maß ein und zeichnen Sie darüber.</p>
+    </div>
+    <div>
+      <h3>Jede Mauer einzeln eingestellt</h3>
+      <p>Höhe in Anzahl Blöcken, glatte Oberseite, abgetreppte Mauer, zugelassene Blöcke auf dieser Linie: Alles wird im rechten Bereich eingestellt.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VERLEGEPLAN ============ -->
+<section class="bloc-section section-beton" id="calepinage" aria-labelledby="calepinage-titre">
+  <div class="section-tete">
+    <h2 id="calepinage-titre">Der Verlegeplan, für Sie berechnet, Lage für Lage</h2>
+    <p>Der Verlegeplan legt fest, welcher Block wo liegt. CREASoft berechnet ihn Lage für Lage. Die Software nimmt die Blöcke, die Sie für das Projekt angekreuzt haben, versetzt die Fugen von einer Lage zur nächsten, damit die Mauer hält, und lässt an Ecken und T-Anschlüssen die nötigen Lücken.</p>
+  </div>
+
+  <div class="elevation" data-elevation
+       data-txt-rang="Lage" data-txt-total-mur="Ganze Mauer" data-txt-total-rang="Lage"
+       data-txt-blocs="Blöcke" data-txt-longueur="7,20 m" data-txt-hauteur="1,80 m">
+    <div class="elevation-barre" role="group" aria-label="Anzuzeigende Lage wählen">
+      <button type="button" class="puce" aria-pressed="true" data-rang="tous">Ganze Mauer</button>
+      <button type="button" class="puce" aria-pressed="false" data-rang="1">Lage 1</button>
+      <button type="button" class="puce" aria-pressed="false" data-rang="2">Lage 2</button>
+      <button type="button" class="puce" aria-pressed="false" data-rang="3">Lage 3</button>
+    </div>
+    <div class="elevation-dessin">
+      <svg viewBox="0 44 800 236" role="img" aria-labelledby="elev-titre elev-desc" data-svg>
+        <title id="elev-titre">Ansicht einer geraden, 7,20 m langen Mauer mit drei Lagen</title>
+        <desc id="elev-desc">Lagen 1 und 3: vier Blöcke zu 180 cm. Lage 2: ein halber Block zu 90 cm an jedem Ende und drei Blöcke zu 180 cm, damit die Fugen versetzt sind.</desc>
+      </svg>
+    </div>
+    <div class="elevation-legende" aria-live="polite" data-legende></div>
+    <p class="note">Vereinfachtes Beispiel zur Veranschaulichung. In der Software folgt die Verteilung Ihrem Plan, Ihren Ecken und Ihrem Blockkatalog.</p>
+  </div>
+
+  <div class="rangs">
+    <figure>
+      <img src="../img/pdf-rang1.webp" width="914" height="1148" loading="lazy" alt="Seite „Lage 1“ der PDF-Mappe: Verlegeplan von oben, eine L-förmige Mauer, Blöcke nach Typ eingefärbt.">
+      <figcaption>Lage 1</figcaption>
+    </figure>
+    <figure>
+      <img src="../img/pdf-rang2.webp" width="914" height="1148" loading="lazy" alt="Seite „Lage 2“ der PDF-Mappe: Die Blöcke sind gegenüber Lage 1 versetzt.">
+      <figcaption>Lage 2</figcaption>
+    </figure>
+    <figure>
+      <img src="../img/pdf-rang3.webp" width="914" height="1148" loading="lazy" alt="Seite „Lage 3“ der PDF-Mappe: die oberste Lage, wieder versetzt.">
+      <figcaption>Lage 3</figcaption>
+    </figure>
+  </div>
+  <p class="legende-rangs">Dieselbe L-förmige Mauer, Lage für Lage, so wie sie in der PDF-Mappe erscheint (auf Französisch). Eine Farbe pro Blocktyp.</p>
+</section>
+
+<!-- ============ 3D ============ -->
+<section class="bloc-section" id="trois-d" aria-labelledby="troisd-titre">
+  <div class="section-tete">
+    <h2 id="troisd-titre">Die Mauer in 3D, bevor der erste Block liegt</h2>
+    <p>Drehen Sie sich mit der Maus um die Mauer, zoomen Sie auf eine Ecke, prüfen Sie eine Höhe. Die Blockzählung bleibt in einer Ecke sichtbar. Längen- und Höhenmaße setzen Sie, wo Sie wollen, und jede Ansicht lässt sich als Bild speichern, bis 4K.</p>
+  </div>
+
+  <div class="vues">
+    <figure class="vue vue-grande">
+      <img src="../img/vue-croquis.webp" width="1600" height="773" loading="lazy" alt="Skizzenansicht der L-förmigen Mauer in Schwarzweiß, mit roten Maßen von 1,80 m Höhe und 7,20 m Länge.">
+      <figcaption><b>Skizze</b>: eine Strichzeichnung mit Maßen, leicht zu lesen und zu drucken.</figcaption>
+    </figure>
+    <figure class="vue">
+      <img src="../img/vue-couleur.webp" width="1000" height="470" loading="lazy" alt="Farbansicht derselben Mauer: Jeder Blocktyp hat seine eigene Farbe.">
+      <figcaption><b>Farbe</b>: Jeder Blocktyp hat seine eigene Farbe, wie in der PDF-Mappe.</figcaption>
+    </figure>
+    <figure class="vue">
+      <img src="../img/vue-realisme.webp" width="1800" height="914" loading="lazy" alt="Realistische Ansicht derselben Mauer, Betontextur und Crea'bloc-Wasserzeichen.">
+      <figcaption><b>Realismus</b>: Perspektive und Betontextur, mit oder ohne Crea'bloc-Wasserzeichen.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ PDF-MAPPE ============ -->
+<section class="bloc-section section-papier" id="dossier" aria-labelledby="dossier-titre">
+  <div class="dossier">
+    <div class="dossier-texte">
+      <h2 id="dossier-titre">Eine Baustellenmappe, bereit zum Drucken</h2>
+      <p>Am Ende erstellt CREASoft ein PDF mit dem Namen des Projekts. Sie schicken es dem Kunden mit dem Angebot und lassen es dem Maurer auf der Baustelle.</p>
+      <dl class="sommaire-pdf">
+        <div><dt>Deckblatt</dt><dd>Projektname, Datum, Ihre Kontaktdaten und das 3D-Bild Ihrer Wahl.</dd></div>
+        <div><dt>Benötigte Blöcke</dt><dd>Jeder Blocktyp mit seinen Maßen in Zentimetern und der Menge, dazu die Summe.</dd></div>
+        <div><dt>Ein Plan pro Lage</dt><dd>Der Verlegeplan von oben, eine Farbe pro Blocktyp, mit Legende.</dd></div>
+        <div><dt>Große Projekte</dt><dd>Ab einer Länge, die Sie festlegen, eine Gesamtansicht in Felder aufgeteilt, dann das Detail jedes Feldes.</dd></div>
+      </dl>
+    </div>
+    <div class="feuilles">
+      <img class="feuille f1" src="../img/pdf-quantitatif.webp" width="1075" height="1521" loading="lazy" alt="Seite „Benötigte Blöcke“ der Mappe: Tabelle mit 180-60 (12), 120-60 (6), Treppe-180-60 (3), 90-60 (1), Summe 22.">
+      <img class="feuille f2" src="../img/pdf-vue-ensemble.webp" width="1075" height="1521" loading="lazy" alt="Seite „Gesamtansicht“ einer langen Mauer, in 3 mal 2 Felder aufgeteilt.">
+      <img class="feuille f3" src="../img/pdf-case.webp" width="1075" height="1521" loading="lazy" alt="Seite „Lage 1, Feld A1“: das Detail eines Feldes der langen Mauer.">
+    </div>
+  </div>
+</section>
+
+<!-- ============ KATALOG ============ -->
+<section class="bloc-section" id="catalogue" aria-labelledby="catalogue-titre">
+  <div class="section-tete">
+    <h2 id="catalogue-titre">Ihre Blöcke, Ihre Maße</h2>
+    <p>CREASoft arbeitet mit Ihrem Bestand: Blöcke nach Mauerstärke sortiert, mit ihren Maßen und Noppen. Fügen Sie ein Format hinzu, ändern Sie eines, exportieren Sie den Katalog für einen Kollegen.</p>
+  </div>
+
+  <div class="catalogue">
+    <figure class="cadre cadre-schema">
+      <img src="../img/schema-bloc.webp" width="700" height="640" loading="lazy" alt="Zeichnung eines Noppenblocks mit seinen Maßen: Länge X, Breite Y, Höhe Z, Noppenbreiten L1 und L2.">
+      <figcaption>Ein Block wird durch drei Maße in Zentimetern und seine Noppen beschrieben.</figcaption>
+    </figure>
+
+    <div class="speciaux">
+      <h3>Sonderblöcke</h3>
+      <p>Für Mauerenden und Durchgänge zeichnen Sie im Editor vier Formen. Die Vorschau ändert sich, während Sie die Maße eingeben.</p>
+      <ul class="formes">
+        <li>
+          <svg viewBox="0 0 120 50" aria-hidden="true"><path d="M4 6h82a20 20 0 0 1 0 40H4z"/><circle cx="88" cy="26" r="9" class="ergot"/></svg>
+          <b>Abgerundet</b><span>Halbrundes Ende, einstellbare runde Noppe.</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 120 50" aria-hidden="true"><path d="M4 6h112v40H82V22H62v24H4z"/></svg>
+          <b>Gabeltasche</b><span>Eine oder zwei Aussparungen für die Gabeln, Breite und Abstand einstellbar.</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 120 50" aria-hidden="true"><path d="M4 46V36h14V26h14V16h14V6h70v40z"/></svg>
+          <b>Treppe</b><span>Auftritt und Steigung nach Wahl.</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 120 50" aria-hidden="true"><path d="M30 6h86v40H4z"/></svg>
+          <b>Schräg</b><span>Schräger Schnitt, Länge der Diagonale einstellbar.</span>
+        </li>
+      </ul>
+      <h3>Oberflächenmuster</h3>
+      <p>Ein Muster überzieht die Mauerfläche mit einem Foto, zum Beispiel einer Bruchsteinoptik. Die Mauer erscheint dann in 3D mit diesem Muster statt mit ihren Fugen.</p>
+    </div>
+  </div>
+
+  <figure class="cadre ecran">
+    <img src="../img/ecran-inventaire.webp" width="1383" height="839" loading="lazy" alt="Bestandsansicht von CREASoft (auf Französisch): Blöcke nach Mauerstärke gruppiert (50 cm, 60 cm), mit 180-60, Treppen-, abgerundeten, Gabel- und Schrägblöcken, 120-60, 90-60.">
+    <figcaption>Der Bestand, nach Mauerstärke sortiert.</figcaption>
+  </figure>
+</section>
+
+<!-- ============ TECHNISCHE DATEN ============ -->
+<section class="bloc-section section-beton" id="fiche" aria-labelledby="fiche-titre">
+  <h2 id="fiche-titre">Technische Daten</h2>
+  <table class="fiche">
+    <tbody>
+      <tr><th scope="row">Computer</th><td>Windows 10 und 11. macOS 13 oder neuer, auf Macs mit Apple Silicon (M1 und neuer).</td></tr>
+      <tr><th scope="row">Einheiten</th><td>Plan in Metern, Blöcke in Zentimetern, Winkel in Grad.</td></tr>
+      <tr><th scope="row">Planregeln</th><td>Waagerecht, senkrecht, fixieren, deckungsgleich, parallel, rechtwinklig, Länge, Winkel.</td></tr>
+      <tr><th scope="row">Sonderblöcke</th><td>Abgerundet, Gabeltasche, Treppe, schräg.</td></tr>
+      <tr><th scope="row">3D-Ansichten</th><td>Skizze, Farbe, Realismus. Verschiebbare Längen- und Höhenmaße.</td></tr>
+      <tr><th scope="row">Bilder</th><td>SD, HD, Full HD, 2K oder 4K, in einer Galerie pro Projekt.</td></tr>
+      <tr><th scope="row">Mappe</th><td>PDF: Deckblatt, benötigte Blöcke, ein Verlegeplan pro Lage, in Felder aufgeteilte Gesamtansicht für lange Mauern.</td></tr>
+      <tr><th scope="row">Dateien</th><td>Eine <i>.projet</i>-Datei pro Projekt, per Doppelklick zu öffnen. Bestand als <i>.inv</i>-Datei exportierbar.</td></tr>
+      <tr><th scope="row">Komfort</th><td>Rückgängig und Wiederholen überall (Strg+Z, Strg+Y). Bebilderte Anleitung in der Software, in dreizehn Teilen.</td></tr>
+      <tr><th scope="row">Sprache</th><td>Die Software und ihre Anleitung sind auf Französisch.</td></tr>
+      <tr><th scope="row">Version</th><td>1.10.22</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ============ FRAGEN ============ -->
+<section class="bloc-section" id="questions" aria-labelledby="questions-titre">
+  <h2 id="questions-titre">Häufige Fragen</h2>
+  <div class="faq">
+    <details>
+      <summary>Gibt es die Software auf Deutsch?</summary>
+      <p>Noch nicht: Bildschirme, Anleitung und PDF-Mappe sind auf Französisch.</p>
+    </details>
+    <details>
+      <summary>Muss ich mit einem Zeichenprogramm umgehen können?</summary>
+      <p>Nein. Eine Mauer zeichnen Sie mit zwei Klicks, der Magnet schließt die Ecken, und eine bebilderte Anleitung ist in die Software eingebaut, vom Öffnen eines Projekts bis zum Drucken der Mappe.</p>
+    </details>
+    <details>
+      <summary>Läuft sie auf dem Mac?</summary>
+      <p>Ja, auf Macs mit Apple Silicon (M1 und neuer) mit macOS 13 oder neuer.</p>
+    </details>
+    <details>
+      <summary>Kann ich eigene Blockformate hinzufügen?</summary>
+      <p>Ja. Der Bestand lässt sich bearbeiten: Sie geben die drei Maße in Zentimetern und die Noppen ein oder legen einen Sonderblock an (abgerundet, Gabeltasche, Treppe, schräg). Neue Blöcke erscheinen danach in den Einstellungen Ihrer Projekte.</p>
+    </details>
+    <details>
+      <summary>Wie wählt die Software die Blöcke aus?</summary>
+      <p>Für jedes Projekt wählen Sie die Mauerstärke und kreuzen die zugelassenen Blöcke an. Sie können die Blöcke sogar Mauer für Mauer einschränken. CREASoft setzt nur diese und versetzt die Fugen von einer Lage zur nächsten.</p>
+    </details>
+    <details>
+      <summary>Kann ich von einem vorhandenen Plan ausgehen?</summary>
+      <p>Ja. Importieren Sie ein Bild des Plans, geben Sie eine bekannte Länge an, um es maßstäblich zu machen, und zeichnen Sie die Mauern darüber.</p>
+    </details>
+    <details>
+      <summary>Was enthält die PDF-Mappe?</summary>
+      <p>Ein Deckblatt mit dem gewählten 3D-Bild, die Liste der benötigten Blöcke mit Mengen, dann einen Verlegeplan pro Lage. Bei einer langen Mauer eine in Felder aufgeteilte Gesamtansicht und das Detail jedes Feldes.</p>
+    </details>
+    <details>
+      <summary>Wo werden meine Projekte gespeichert?</summary>
+      <p>Auf Ihrem Computer: Jedes Projekt ist eine <i>.projet</i>-Datei mit Plan, Einstellungen und Bildern. PDF-Mappen und Bilder landen in einem Ordner <i>docs_CREASoft</i>, unter dem Namen des jeweiligen Projekts.</p>
+    </details>
+  </div>
+</section>
+
+<!-- ============ ÜBER MICH ============ -->
+<section class="bloc-section" id="auteur" aria-labelledby="auteur-titre">
+  <div class="auteur">
+    <h2 id="auteur-titre">Wer bin ich?</h2>
+    <div>
+      <p>Ich heiße Yann Royer. Ich entwerfe und entwickle CREASoft, von der ersten Linie des Plans bis zur PDF-Mappe. Wenn Sie eine Frage, eine Idee oder ein Problem mit der Software haben, sprechen Sie also direkt mit mir.</p>
+      <p><a class="lien-fort" href="https://yann.royer.contact" rel="author">Mein Portfolio ansehen</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PREIS UND KONTAKT ============ -->
+<section class="bloc-section section-rouge" id="contact" aria-labelledby="contact-titre">
+  <div class="contact">
+    <div>
+      <h2 id="contact-titre">CREASoft in Aktion sehen</h2>
+      <p>Schreiben Sie mir oder rufen Sie mich an, für eine Vorführung oder um zu erfahren, wann die Abonnements starten.</p>
+    </div>
+    <div class="contact-carte">
+      <h3>Preis</h3>
+      <p>CREASoft wird <b>im Abonnement</b> angeboten.</p>
+      <p class="bientot">Der Preis folgt in Kürze.</p>
+      <h3>Kontakt</h3>
+      <ul class="coordonnees">
+        <li><span>Telefon</span> <a href="tel:+33769184422">+33 7 69 18 44 22</a></li>
+        <li><span>E-Mail</span> <a href="mailto:royer.yann@free.fr">royer.yann@free.fr</a></li>
+      </ul>
+      <a class="bouton bouton-clair" href="mailto:royer.yann@free.fr?subject=CREASoft%20Vorf%C3%BChrung">Vorführung per E-Mail anfragen</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="pied">
+  <div class="pied-int">
+    <p>© 2026 Yann Royer. <b>CREA</b>Soft, Software für Verlegepläne von Crea'bloc.</p>
+    <p><a href="#haut">Nach oben</a> · <a href="impressum.html">Impressum</a></p>
+  </div>
+</footer>
+
+<script src="../site.js" defer></script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 # Site CREASoft : ce qui reste à faire
 
-Le site comprend `index.html`, `mentions-legales.html`, `style.css`, `site.js` et le dossier `img/`.
+Le site comprend `index.html` et `mentions-legales.html` (français), `en/` (anglais : `index.html`, `legal-notice.html`), `de/` (allemand : `index.html`, `impressum.html`), `style.css`, `site.js` et le dossier `img/`, commun aux trois langues.
 Il n'y a rien à compiler : ouvrir `index.html` dans un navigateur suffit.
 
 ## Déjà rempli
@@ -20,6 +20,9 @@ Il n'y a rien à compiler : ouvrir `index.html` dans un navigateur suffit.
 - **Hébergeur** : si le site ne passe pas par GitHub Pages, changer la partie « Hébergement ».
 
 ## À vérifier
+
+- **Trois langues** : toute modification du texte se fait dans les trois pages d'accueil, et dans les trois pages de mentions légales. Les pages anglaise et allemande précisent que le logiciel est en français.
+- **Impressum allemand** : en Allemagne, un Impressum contient en principe une adresse postale. Il n'y en a pas ici, comme sur la page française.
 
 - Le lien du portfolio, https://yann.royer.contact, s'ouvre bien.
 - **Windows 10 et 11** : la page l'annonce, car Qt 6 ne tourne pas sur les versions plus anciennes.

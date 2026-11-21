@@ -24,6 +24,18 @@
   var legende = zone.querySelector("[data-legende]");
   var NS = "http://www.w3.org/2000/svg";
 
+  // Textes de la page (traduits dans en/ et de/ via les attributs data-txt-*)
+  // Espace insécable avant les deux-points en français seulement
+  var SEP = document.documentElement.lang === "fr" ? " : " : ": ";
+  var TXT = {
+    rang: zone.getAttribute("data-txt-rang") || "Rang",
+    totalMur: zone.getAttribute("data-txt-total-mur") || "Total du mur",
+    totalRang: zone.getAttribute("data-txt-total-rang") || "Total du rang",
+    blocs: zone.getAttribute("data-txt-blocs") || "blocs",
+    longueur: zone.getAttribute("data-txt-longueur") || "7,20 m",
+    hauteur: zone.getAttribute("data-txt-hauteur") || "1,80 m"
+  };
+
   var TYPES = {
     "180": { nom: "180-60", dims: "180 × 60 × 60 cm", couleur: "#c62828", ergots: 6 },
     "90": { nom: "90-60", dims: "90 × 60 × 60 cm", couleur: "#ef6c00", ergots: 3 }
@@ -63,7 +75,7 @@
       x += w;
     });
     var etiquette = el("text", { x: X0 + 720 * ECHELLE + 12, y: y + H / 2 + 5, "class": "etiquette-rang" }, g);
-    etiquette.textContent = "Rang " + (i + 1);
+    etiquette.textContent = TXT.rang + " " + (i + 1);
     groupes.push(g);
   });
 
@@ -77,7 +89,7 @@
   var mx = (xa + xb) / 2;
   el("rect", { x: mx - 34, y: yc - 13, width: 68, height: 26, rx: 13, "class": "bulle" });
   var tl = el("text", { x: mx, y: yc + 5, "text-anchor": "middle", "class": "bulle-texte" });
-  tl.textContent = "7,20 m";
+  tl.textContent = TXT.longueur;
 
   // Cote de hauteur à gauche
   var xh = X0 - 50, ya = BAS, yb = BAS - 3 * H;
@@ -89,7 +101,7 @@
   var my = (ya + yb) / 2;
   el("rect", { x: xh - 30, y: my - 13, width: 60, height: 26, rx: 13, "class": "bulle" });
   var th = el("text", { x: xh, y: my + 5, "text-anchor": "middle", "class": "bulle-texte" });
-  th.textContent = "1,80 m";
+  th.textContent = TXT.hauteur;
 
   // Les bulles de cote s'adaptent à la taille du texte (plus grand sur téléphone)
   var bulles = [];
@@ -133,9 +145,9 @@
       if (!total[k]) return;
       somme += total[k];
       html += '<span><i style="background:' + TYPES[k].couleur + 'b8"></i>' +
-        TYPES[k].nom + " (" + TYPES[k].dims + ") : <b>" + total[k] + "</b></span>";
+        TYPES[k].nom + " (" + TYPES[k].dims + ")" + SEP + "<b>" + total[k] + "</b></span>";
     });
-    html += "<span>Total" + (choix === "tous" ? " du mur" : " du rang " + choix) + " : <b>" + somme + " blocs</b></span>";
+    html += "<span>" + (choix === "tous" ? TXT.totalMur : TXT.totalRang + " " + choix) + SEP + "<b>" + somme + " " + TXT.blocs + "</b></span>";
     legende.innerHTML = html;
     Array.prototype.forEach.call(zone.querySelectorAll("[data-rang].puce, .puce"), function (b) {
       b.setAttribute("aria-pressed", b.getAttribute("data-rang") === choix ? "true" : "false");
