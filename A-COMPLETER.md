@@ -38,5 +38,5 @@ Il n'y a rien à compiler : ouvrir `index.html` dans un navigateur suffit.
 
 ## Publication
 
-Dépôt : `yann-royer/CREASoft-web-page`. Avec GitHub Pages (Settings > Pages > branche `main`, dossier racine), le site sera en ligne à l'adresse `https://yann-royer.github.io/CREASoft-web-page/`.
+Dépôt : `yann-royer/CREASoft-web-page`. Avec GitHub Pages (Settings > Pages > branche `main`, dossier racine), le site sera en ligne à l'adresse `https://creasoft.royer.contact/`.
 La police (Archivo) vient de Google Fonts. Sans connexion, la page s'affiche en Segoe UI.
